@@ -302,7 +302,11 @@ hr {
 
 
 
+
 <script>
+
+
+
 var choices = [];
 
 var currentQuestion = 1
@@ -335,6 +339,70 @@ if (choiceIndex===-1){
  
   console.log(choices);
 }
+
+
+/* questions */
+
+var findChoice = -1;
+var displayQuest = 0;
+var correct = 0;
+var totalQuest = 5;
+var element = document.getElementById("question");
+var choice0 = document.getElementById("choice0");
+var choice1 = document.getElementById("choice1");
+var choice2 = document.getElementById("choice2");   
+var choice3 = document.getElementById("choice3");
+var next = document.getElementById("next");
+var ans = document.getElementById("answer");
+next.style.display = "none";
+
+
+
+var questions = [
+"What is the largest number of five digits?"), 
+              ("What color to do you get when you mix red and white?"),
+              ("What is a meal on a blanket in open air?"),
+              ("What animal is the largest living creature on Earth?"),
+              ("Which book did Mary Shelley write when she was 19?")
+]; 
+var answerA = [
+    "12345",
+  "Lavendar",
+  "Bar-B-Que",
+  "Tiger",
+  "War and Peace"
+];
+        
+                
+var answerB = [
+    "98765",
+  "Violet",
+  "Picnic",
+  "Giraffe",
+  "A Wrinkle In Time"
+];
+var answerC = [
+    "99999",
+  "Green",
+  "Sit-Down",
+  "Whale",
+  "Frankenstein"
+];
+var answerD = [
+    "34567",
+  "Pink",
+  "Cheap",
+  "Mouse",
+  "Werewolf in London"
+];
+var correctAnswer = [
+   "99999",
+   "Pink",
+   "Picnic",
+   "Whale",
+   "Frankenstein"
+];
+
 
 
 </script>
